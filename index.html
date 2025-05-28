@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+</head>
+<body>
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio">Inicio</a>
+            </li>
+            <li>
+                <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos">Projetos</a>
+            </li>
+            <li>
+                <a href="#contato">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <div>
+            <img src="src/imagens/Ft-perfil.jpg" alt="Foto de Perfil" class="foto-perfil">
+            <h1>Ricardo Silva</h1>
+            <p>Desenvolvedor Frontend</p>
+        </div>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="titulo">Sobre mim</h2>
+        <div class="caixa">
+            <p class="texto">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni illo molestias eius qui cumque pariatur saepe dignissimos non debitis perferendis sunt quam eligendi tenetur repellendus nobis, commodi quasi reprehenderit vero.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="src/imagens/foto-gta.png" alt="Capa projeto GTA" class="projetos-imagem">
+                <h3 class="info-projetos">Projeto GTA</h3>
+                <p class="paragrafo-projetos">Landing Page de divulgação do jogo GTA</p>              
+            </div>
+
+            <div class="projetos-card">
+                <img src="src/imagens/foto-api-clima.png" alt="Capa projeto API Clima" class="projetos-imagem">
+                <h3 class="info-projetos">Projeto API Clima</h3>
+                <p class="paragrafo-projetos">Pequeno medidor de previsão do tempo consumindo uma API de clima</p>              
+            </div>
+
+            <div class="projetos-card">
+                <img src="src/imagens/foto-agencia-XPTO.png" alt="Capa projeto Agencia XPTO" class="projetos-imagem">
+                <h3 class="info-projetos">Projeto Agencia XPTO</h3>
+                <p class="paragrafo-projetos">Landing de uma Empresa </p>              
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Contatos</h2>
+        <form class="formulario-contato" id="formulario">
+            <div class="grupo-form">
+                <input type="text" placeholder="Nome" class="campo-form">
+                <textarea placeholder="Digite sua Mensagem" class="text-form"></textarea>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
