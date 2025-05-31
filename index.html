@@ -80,17 +80,19 @@
     </section>
 
 
-    <section id="contatos" class="contatos">
+    <section id="contato" class="contatos">
         <h2 class="titulo">Entre em Contato</h2>
-        <form class="formulario-contato" id="formulario">
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhatsapp(event)">
             <div class="grupo-form">
-                <input type="text" placeholder="Nome" class="campo-form">
-                <textarea placeholder="Digite sua Mensagem" class="campo-form"></textarea>
+                <input type="text" placeholder="Nome" class="campo-form" id="nome">
+                <textarea placeholder="Digite sua Mensagem" class="campo-form" rows="6" id="mensagem"></textarea>
             </div>
 
             <button type="submit" class="btn"> Enviar Whatsapp</button>
         </form>
     </section>
+
+    <script src="src/js/index.js"></script>
 </body>
 
 </html>
