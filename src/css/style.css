@@ -71,11 +71,11 @@ body {
     border: 4px solid var(--vidro);
 }
 
-.sobre {
+.sobre, .projetos, .contatos {
     padding: 6rem 2rem;
 }
 
-.sobre .titulo {
+.titulo {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 20px;
@@ -95,10 +95,10 @@ body {
     text-align: center;
     font-size: 1.2rem;
 }
-
+/* 
 .projetos {
   padding: 6rem 2rem;  
-}
+} */
 
 .projetos .projetos-caixa {
     display: grid;
@@ -117,12 +117,12 @@ body {
     transition: all 0.5 ease;
     cursor: pointer;
 }
-
+/* 
 .projetos .projetos-titulo {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 50px;   
-}
+} */
 
 .projetos .projetos-card:hover {
     box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
@@ -143,4 +143,52 @@ body {
     color: rgba(226, 232, 240, 0.8);
     line-height: 1.25rem;
     margin-bottom: 5px;
-} 
+}
+
+.contatos .formulario-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border: 1px solid var(--vidro);
+    border-radius: 16px;
+}
+
+.contatos .grupo-form {
+    margin-bottom: 1.5rem;
+}
+
+
+.contatos .campo-form {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border: 1px solid var(--vidro);
+    outline: none;
+    resize: none;
+
+}
+
+.contatos .campo-form:focus {
+    border-color: var(--secundaria);
+    box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
+}
+
+.contatos .btn {
+    color: var(--claro);
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5 ease;
+}
+
+.contatos .btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);  
+}
